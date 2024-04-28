@@ -1,4 +1,4 @@
-package content
+package district
 
 import (
 	"github.com/gin-gonic/gin"
@@ -23,5 +23,5 @@ func (*Plugin) Register(group *gin.RouterGroup) {
 }
 
 func (*Plugin) RouterPath() string {
-	return "content"
+	return "district"
 }

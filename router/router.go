@@ -16,6 +16,6 @@ type Router struct{}
 func (s *Router) InitRouter(Router *gin.RouterGroup) {
 	{
 		// districts 表操作
-		Router.POST("district/list", api.ListDistrict)
+		Router.POST("list", api.ListDistrict)
 	}
 }
