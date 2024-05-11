@@ -7,9 +7,7 @@ import (
 )
 
 func ListDistrict(ctx *gin.Context) {
-	json := make(map[string]interface{})
-	_ = ctx.BindJSON(&json)
-	upId := output.ParamToInt(json["upId"])
+	upId := output.ParamToInt(ctx.Query("upId"))
 	list, err := models.ListDistrict(upId)
 
 	if err != nil {
